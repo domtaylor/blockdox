@@ -20,7 +20,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # THEME = 'bootstrap-next'
-THEME = 'pelican-bootstrap3'
+THEME = '/home/dom/Documents/Work/blockdoxcom/themes/pelican-bootstrap3'
 
 # Bootstrap theme settings
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
