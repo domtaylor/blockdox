@@ -20,7 +20,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # THEME = 'bootstrap-next'
-THEME = 'pelican-bootstrap3'
+THEME = '8da6e5bc1347ca9046599efbee300ffc'
 
 # Bootstrap theme settings
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
