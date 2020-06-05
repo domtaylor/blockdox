@@ -4,9 +4,9 @@ __pycache__
 pelican.pid
 srv.pid
 pelicanconf_local.py
-lib64
-lib/python3.6/site-packages
-bin
-share/python-wheels
-blockdoxcom.git
+lib64/
+lib/python3.6/site-packages/
+bin/
+share/python-wheels/
+blockdoxcom.git/
 .DS_Store
