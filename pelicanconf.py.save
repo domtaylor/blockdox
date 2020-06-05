@@ -30,8 +30,8 @@ PLUGINS = ['i18n_subsites', 'image_process']
 BOOTSTRAP_THEME = 'flatly'
 CUSTOM_CSS = 'static/css/custom.css'
 
-SITELOGO = 'images/logo-white.png'
-SITELOGO_SIZE = 100
+SITELOGO = 'images/logo.jpg'
+SITELOGO_SIZE = 107
 HIDE_SITENAME = False
 
 SHOW_ARTICLE_CATEGORY = True

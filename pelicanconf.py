@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'BlockDox'
-SITENAME = 'Social Distancing'
+SITENAME = ''
 SITEURL = '/'
 
 PATH = 'content'
@@ -20,7 +20,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # THEME = 'bootstrap-next'
-THEME = 'pelican-bootstrap3'
+THEME = '/mnt/c/Users/dom_t/Desktop/Projects/pelican/blockdoxcom/themes/blockdox-bootstrap3'
 
 # Bootstrap theme settings
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
@@ -28,10 +28,10 @@ PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites', 'image_process']
 # Set this to change bootswatch (http://bootswatch.com/)
 BOOTSTRAP_THEME = 'flatly'
-CUSTOM_CSS = 'static/css/custom.css'
+CUSTOM_CSS = 'theme/css/surfcoastdigital.css'
 
-SITELOGO = 'images/logo-white.png'
-SITELOGO_SIZE = 100
+SITELOGO = 'images/logo-main.png'
+SITELOGO_SIZE = 107
 HIDE_SITENAME = False
 
 SHOW_ARTICLE_CATEGORY = True
