@@ -378,7 +378,11 @@ a p {
   border: 1px solid #333;
 }
 
-
+/* Hubspot Contact Form */
+.contact-hbspt {
+  width: max-content;
+  margin: 0 auto;
+}
 /* Placeholder */
 
 .input-subscribe {

@@ -80,6 +80,9 @@
     {% if CUSTOM_CSS %}
         <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
     {% endif %}
+    {% if EXTENDED %}
+        <link href="{{ SITEURL }}/{{ EXTENDED.CSS }}" rel="stylesheet">
+    {% endif %}
     {% if SHARIFF %}
         <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/shariff/shariff.min.css" rel="stylesheet">
     {% endif %}
@@ -142,15 +145,6 @@
                 {% if not PAGES_SORT_ATTRIBUTE -%}
                     {% set PAGES_SORT_ATTRIBUTE = 'title' %}
                 {%- endif %}
-                {% if DISPLAY_PAGES_ON_MENU %}
-                    {% for p in pages | sort(attribute=PAGES_SORT_ATTRIBUTE) %}
-                        {% if p.url %}
-                         <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">
-                             {{ p.menulabel|default(p.title) }}
-                          </a></li>
-                        {% endif %}
-                      {% endfor %}
-                {% endif %}
                 {% if DISPLAY_CATEGORIES_ON_MENU %}
                     {% for cat, null in categories %}
                         <li {% if cat == category %}class="active"{% endif %}>
@@ -163,7 +157,7 @@
                 <li><a href="smart-buildings.html">Smart Buildings</a></li>
                 <li><a href="passenger-count.html">Passenger Count</a></li>
                 <li><a href="articles-landing.html">Articles</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
 <!--             {% if 'tipue_search' in PLUGINS %}

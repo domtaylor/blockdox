@@ -1,5 +1,6 @@
 ---
 title: Contact
+save_as: contact.html
 img_src: ""
 img_alt: ""
 img_title: ""
