@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title|striptags }} - {{ SITENAME }}{% endblock %}
+{% block html_lang %}{{ page.lang }}{% endblock %}
+{% block meta %}
+{% if page.author %}
+<meta name="author" content="{{ article.author }}" />
+{% else %}
+<meta name="author" content="{{ AUTHOR }}" />
+{% endif %}
+{% if page.summary %}
+<meta name="description" content="{{ page.summary|striptags|escape }}" />
+{% endif %}
+{% endblock %}
+{% block opengraph %}
+{% if USE_OPEN_GRAPH %}
+{% if OPEN_GRAPH_FB_APP_ID %}
+<meta property="fb:app_id" content="{{ OPEN_GRAPH_FB_APP_ID }}" />
+{% endif %}
+<meta property="og:site_name" content="{{ SITENAME }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ page.title|striptags|escape }}" />
+<meta property="og:url" content="{{ SITEURL }}/{{ page.url }}" />
+<meta property="og:description" content="{{ page.summary|striptags|escape }}" />
+{% endif %}
+{% endblock %}
+
+{% block canonical_rel %}
+<link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
+{% endblock %}
+
+{% block breadcrumbs %}
+{% if DISPLAY_BREADCRUMBS %}
+{% if DISPLAY_CATEGORY_IN_BREADCRUMBS %}
+<ol class="breadcrumb">
+    <li><a href="{{ SITEURL }}" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
+    <li><a href="{{ SITEURL }}/{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></li>
+    <li class="active">{{ page.title }}</li>
+</ol>
+{% else %}
+<ol class="breadcrumb">
+    <li><a href="{{ SITEURL }}" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
+    <li class="active">{{ page.title }}</li>
+</ol>
+{% endif %}
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<section id="content">
+    <h2 class="h2-32 text-marine-blue font-weight-normal text-center" style="padding-bottom: 45px;">Get In Touch</h2>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+    <script>
+        hbspt.forms.create({
+            portalId: "6996519",
+            formId: "a8e65a79-0d35-4651-a085-90b93f095d6d"
+        });
+    </script>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+{% if ADDTHIS_PROFILE %}
+{% if ADDTHIS_DATA_TRACK_ADDRESSBAR|default(true) %}
+<script type="text/javascript">var addthis_config = { "data_track_addressbar": true };</script>
+{% endif %}
+{% endif %}
+{% endblock %}

@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'BlockDox'
-SITENAME = ''
-SITEURL = '/'
+SITENAME = 'BlockDox'
+SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
@@ -20,21 +20,41 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # THEME = 'bootstrap-next'
-THEME = '/mnt/c/Users/dom_t/Desktop/Projects/pelican/blockdoxcom/themes/blockdox-bootstrap3'
-
+THEME = '/mnt/c/Users/dom_t/Desktop/Projects/pelican/blockdoxcom/themes/pelican-bootstrap3'
+#DISPLAY_PAGES_ON_MENU = True
 # Bootstrap theme settings
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites', 'image_process']
 # Set this to change bootswatch (http://bootswatch.com/)
-BOOTSTRAP_THEME = 'flatly'
-CUSTOM_CSS = 'theme/css/surfcoastdigital.css'
-
+#BOOTSTRAP_THEME = 'flatly'
+CUSTOM_CSS = 'theme/css/custom.css'
+CUSTOM_JS = 'theme/js/custom.js'
 SITELOGO = 'images/logo-main.png'
-SITELOGO_SIZE = 107
-HIDE_SITENAME = False
+HIDE_SITENAME = True
+# Set this to true for the menu to be full width
+#BOOTSTRAP_FLUID = False
+#RELATIVE_URLS = True
+#PAGE_URL = 'pages/{slug}.html'
 
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
 SHOW_ARTICLE_CATEGORY = True
+
+# Defines the menu items in the top bar
+MENUITEMS = (
+    ('Home', SITEURL),
+    ('About', SITEURL + '/pages/standard-text.html'),
+    ('Smart Buildings', SITEURL + '/pages/smart-buildings.html'),
+    ('Passenger Count', SITEURL + '/pages/passenger-count.html'),
+    ('Articles', SITEURL + '/pages/articles.html'),
+    ('Contact', SITEURL + '/pages/contact.html'),
+)
+
+# DIRECT_TEMPLATES = [
+#   'index', 'categories', 'authors', 'archives',  # (default)
+#  'contact'  # other HTML template to render
+# ]
 
 IMAGE_PROCESS = {
     'article-summary-image': ["scale_in 200 200 True"],
@@ -81,9 +101,10 @@ EXTRA_PATH_METADATA = {
     # 'extra/README': {'path': 'README'},
 }
 
-DISPLAY_ARTICLE_INFO_ON_INDEX = True
+DISPLAY_ARTICLE_INFO_ON_INDEX = False
 
 NETLIFY_CMS = True
+TYPOGRIFY = False
 
 # Import local development config
 try:
