@@ -172,6 +172,10 @@
     border: 1.5px solid #367ea0;
     margin: 23px 0px 23px 0px;
   }
+  .round-points {
+    text-align: right;
+    transform: translateY(-120%);
+  }
 }
 
 /* Mobile landscape and mini Tabs potrait */
@@ -237,6 +241,9 @@
   }
   .blog-sidebar {
     transform: translateY (-105%);
+  }
+  .blockdox-info {
+    display: none;
   }
 }
 
@@ -725,4 +732,30 @@ input[type="text"] {
 input[type="text"]:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+/* Contact Form */
+.contact-form {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 50vw;
+}
+
+.input-group .form-control {
+  border: 1px solid #ccc !important;
+}
+
+.blockdox-info {
+  display: inline-block;
+  transform: translate(300%, -100%);
+}
+
+.round-points {
+  margin: 0 auto;
+  width: max-content;
+}
+
+ul.round-points > li {
+  list-style: none;
 }

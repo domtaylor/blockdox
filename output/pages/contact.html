@@ -8,12 +8,11 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="BlockDox" name="author">
-<meta content="Leave this empty: Submit &lt;/div&gt; &lt;/form&gt;" name="description">
 <meta content="BlockDox" property="og:site_name">
-<meta content="article" property="og:type"/>
+<meta content="article" property="og:type">
 <meta content="Contact" property="og:title"/>
 <meta content="http://localhost:8000/pages/contact.html" property="og:url"/>
-<meta content="Leave this empty: Submit &lt;/div&gt; &lt;/form&gt;" property="og:description"/>
+<meta content="" property="og:description"/>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <link href="http://localhost:8000/pages/contact.html" rel="canonical"/>
 <!-- Bootstrap -->
@@ -65,6 +64,103 @@
 </div>
 </div>
 <!-- /.navbar -->
+<!-- Hero Section or Page Banner -->
+<div class="jumbotron jumbotron-fluid articles-landing-top-bg img-cover">
+<div class="container">
+<h2 class="h2-32 pt-4 font-weight-normal text-marine-blue">Contact Us</h2>
+</div>
+</div>
+<!-- End Hero Section -->
+<!-- Content Block-->
+<!-- Section 1 -->
+<div class="container container-spacing-sm">
+<h2 class="h2-32 font-weight-normal text-marine-blue">Ready To Learn More?</h2>
+<form action="/php/submit.php" class="form-horizontal contact-form" method="post">
+<div class="container-spacing-sm">
+<div class="form-group">
+<div class="col-sm-10">
+<div class="input-group">
+<div class="input-group-addon">
+<i class="fa fa-address-card"></i>
+</div>
+<input class="form-control" id="text" name="text" placeholder="Your Full Name" required="required" type="text"/>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-10">
+<div class="input-group">
+<div class="input-group-addon">
+<i class="fa fa-envelope"></i>
+</div>
+<input class="form-control" id="email" name="email" placeholder="email@example.com" required="required" type="text"/>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-10">
+<textarea class="form-control" cols="40" id="textarea" name="textarea" placeholder="Your Message..." required="required" rows="5"></textarea>
+</div>
+</div>
+<div class="form-group row">
+<div class="col-sm-10">
+<button class="btn btn-primary" name="submit" style="margin-left: 1em;" type="submit">Submit</button>
+</div>
+</div>
+</div></form>
+</div>
+<div class="container">
+<div class="blockdox-info">
+<ul class="round-points">
+<li>
+<div class="round"> <i class="fa fa-location-arrow"></i> </div>
+<div class="point-txt">
+<h1>Address</h1>
+<p>One Canada Square, Canary Wharf, <br/>London E14 5AB</p>
+</div>
+</li>
+<li>
+<div class="round"> <i class="fa fa-phone"></i> </div>
+<div class="point-txt">
+<h1>Phone Number</h1>
+<p> <a href="tel:+448000698188">+44 (0)800 069 8188</a></p>
+</div>
+</li>
+<li>
+<div class="round"> <i class="fa fa-envelope"></i> </div>
+<h1>Email</h1>
+<p>Enquiries: <a href="mailto:info@blockdox.com"> info@blockdox.com </a> <br/>
+                Sales: <a href="mailto:sales@blockdox.com"> sales@blockdox.com </a></p>
+</li></ul></div>
+</div></body></html>
+
+
+
+
+
+<!--  <form class="contact-form" method="post" action="/php/submit.php">   
+            <div class="form-group row col-sm-10">
+                <input type="text" class="form-control" id="name"  name="name" placeholder="Name" required>
+            </div>
+            <div class="form-group row col-sm-10">
+                <input type="email" class="form-control validate email" id="email" name="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group col-sm-10"> 
+                <p class="antispam">
+                Leave this empty:
+                <br />
+                <input name="url" />
+            </p>
+        </div>
+            <div class="form-group col-sm-10">
+              <textarea class="form-control" rows="5" name="message" placeholder="Message" required></textarea>
+            </div>
+            <div class="form-group col-md-3 offset-md-3">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form> -->
+<!-- End Section 1-->
+<!-- End Content Block -->
 <div class="container-fluid bg-marine-blue container-spacing-sm">
 <h2 class="p-26 text-light text-center font-weight-normal">Articles by Engineers &amp; Data Scientists straight to your
         inbox.</h2>
@@ -125,8 +221,8 @@
 </div>
 <div class="col-xs-6 p-16 text-marine-blue font-weight-medium" style="line-height: 1.8em; ">
 <p>
-                        One Canada Square, Canary Wharf,<br/> London E14 5AB </p>
-<p>Tel: +44 (0)800 069 8188<br/> Email: info@blockdox.com<br/></p>
+                        One Canada Square, Canary Wharf,<br> London E14 5AB </br></p>
+<p>Tel: +44 (0)800 069 8188<br> Email: info@blockdox.com<br/></br></p>
 </div>
 </div>
 <div class="col-sm-5 col-sm-push-2">
@@ -177,29 +273,6 @@
 <!-- <section id="content" class="body">
     <h1 class="entry-title">Contact</h1>
        <div class="entry-content">
- <form class="contact-form" method="post" action="/php/submit.php">
-                    <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="name"  name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <input type="email" class="form-control validate email" id="email" name="email" placeholder="Enter email" required>
-                    </div>
-                    <p class="antispam">
-                        Leave this empty:
-                        <br />
-                        <input name="url" />
-                    </p>
-                    <div class="form-group col-md-12">
-                      <textarea class="form-control" rows="5" name="message" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="form-group col-md-3 offset-md-3">
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-
-<div class="highlight"><pre><span></span>        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/form&gt;</span>
-</pre></div>     </div>
+      </div>
 </section> -->
-</body>
-</html>
+

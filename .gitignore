@@ -8,5 +8,6 @@ lib
 bin
 share
 lib
-blockdoxcom.git/
+blockdoxcom.git
 .DS_Store
+.vscode
