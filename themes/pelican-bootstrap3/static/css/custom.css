@@ -43,6 +43,9 @@
 /* All screens above 1024 pixels */
 
 @media only screen and (min-width: 1024px) {
+  .logo {
+    max-width: 90px;
+  }
   .standard-text-top-bg {
     min-height: 330px;
   }
@@ -68,11 +71,19 @@
     padding-bottom: 130px;
   }
   .navbar {
-    padding-bottom: 40px !important;
+    padding-bottom: 20px !important;
   }
 }
 
-/* iPad Pro */
+/* iPads landscape, iPad Pro portrait */
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .share-social-icons {
+    padding-left: 45px !important;
+  }
+}
+
+/* Bigger (6 inch plus) phones landscape */
 
 @media only screen and (min-width: 992px) and (max-width: 1023px) {
   .logo {
@@ -120,6 +131,12 @@
     max-width: 50px;
     border: 1.5px solid #367ea0;
     margin: 23px 0px 23px 0px;
+  }
+  .share-social-icons-div {
+    float: unset !important;
+  }
+  .mobile-spacing {
+    margin-bottom: 20px;
   }
 }
 
@@ -172,9 +189,11 @@
     border: 1.5px solid #367ea0;
     margin: 23px 0px 23px 0px;
   }
-  .round-points {
-    text-align: right;
-    transform: translateY(-120%);
+  .share-social-icons-div {
+    float: unset !important;
+  }
+  .mobile-spacing {
+    margin-bottom: 20px;
   }
 }
 
@@ -218,7 +237,6 @@
   }
   .pull-right {
     float: none !important;
-    background: #f5f6f7;
   }
   .navbar {
     padding-bottom: 0px !important;
@@ -234,13 +252,20 @@
   .menu {
     background-color: #efefef;
   }
+  .pull-right {
+    float: none !important;
+    background: #f5f6f7;
+  }
   .short-line {
     max-width: 50px;
     border: 1.5px solid #367ea0;
     margin: 23px 0px 23px 0px;
   }
-  .blog-sidebar {
-    transform: translateY (-105%);
+  .share-social-icons-div {
+    float: unset !important;
+  }
+  .mobile-spacing {
+    margin-bottom: 20px;
   }
   .blockdox-info {
     display: none;
@@ -325,6 +350,15 @@
   }
   .mobile-hide {
     display: none;
+  }
+  .share-social-icons-div {
+    float: unset !important;
+  }
+  .mobile-spacing {
+    margin-bottom: 20px;
+  }
+  .footer {
+    font-size: 12px !important;
   }
 }
 
@@ -426,6 +460,10 @@ a p {
 
 .bg-dark {
   background-color: #fff !important;
+}
+
+.text-darkish {
+  color: #1b2239;
 }
 
 .text-marine-blue,
@@ -600,13 +638,25 @@ a p {
   border: 1px solid #333;
 }
 
-/* Placeholder */
+/* Subscribe field */
 
 .input-subscribe {
   padding: 15px;
-  max-width: 600px;
   min-height: 41px;
-  margin: 0 auto;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.input-subscribe-btn {
+  background: #367ea0;
+  width: 26px;
+  height: 26px;
+  border-radius: 2px;
+  color: #fff;
+  padding-top: 2.5px !important;
+  padding-left: 1px !important;
+  right: 10px !important;
+  top: 6px !important;
 }
 
 /* Padding */
@@ -662,10 +712,14 @@ a p {
   cursor: pointer;
 }
 
+.share-social-icons-div {
+  float: right;
+  display: inline-flex;
+}
+
 .share-social-icons {
   padding-left: 60px;
-  height: 26px;
-  margin-top: 10px;
+  margin-top: -3px;
 }
 
 .pagination {
@@ -701,7 +755,7 @@ a p {
 .inner-addon .glyphicon {
   position: absolute;
   padding: 10px;
-  pointer-events: none;
+  cursor: pointer;
 }
 
 /* align glyph */
@@ -734,28 +788,43 @@ input[type="text"]:focus {
   box-shadow: none;
 }
 
+.pull-right {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: #2f98c1;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
 /* Contact Form */
 .contact-form {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  width: 50vw;
+ -webkit-transform-style: preserve-3d;
+ -moz-transform-style: preserve-3d;
+ transform-style: preserve-3d;
+ width: 50vw;
 }
 
 .input-group .form-control {
-  border: 1px solid #ccc !important;
+ border: 1px solid #ccc !important;
 }
 
 .blockdox-info {
-  display: inline-block;
-  transform: translate(300%, -100%);
+ display: inline-block;
+ transform: translate(300%, -100%);
 }
 
 .round-points {
-  margin: 0 auto;
-  width: max-content;
+ margin: 0 auto;
+ width: max-content;
 }
 
 ul.round-points > li {
-  list-style: none;
+ list-style: none;
 }

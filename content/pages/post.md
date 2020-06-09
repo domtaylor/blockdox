@@ -2,6 +2,3 @@
 title: Post
 ---
 
-<!--StartFragment-->
-
-<!--EndFragment-->
