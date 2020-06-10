@@ -3,7 +3,11 @@
 __pycache__
 pelican.pid
 srv.pid
-output
 pelicanconf_local.py
-
+lib
+bin
+share
+lib
+blockdoxcom.git
 .DS_Store
+.vscode
