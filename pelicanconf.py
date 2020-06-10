@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'BlockDox'
 SITENAME = 'BlockDox'
-SITEURL = 'http://localhost:8000'
+SITEURL = ''
 
 PATH = 'content'
 
@@ -19,8 +19,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# THEME = 'bootstrap-next'
-THEME = '/mnt/c/Users/dom_t/Desktop/Projects/pelican/blockdoxcom/themes/pelican-bootstrap3'
+THEME = 'pelican-bootstrap3'
+# THEME = '/mnt/c/Users/dom_t/Desktop/Projects/pelican/blockdoxcom/themes/pelican-bootstrap3'
 #DISPLAY_PAGES_ON_MENU = True
 # Bootstrap theme settings
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
