@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'BlockDox'
 SITENAME = 'BlockDox'
-SITEURL = 'https://blockdoxcom-staging-2.netlify.app'
+SITEURL = ''
 
 PATH = 'content'
 
@@ -19,7 +19,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-THEME = 'pelican-bootstrap3'
+THEME = 'themes/pelican-bootstrap3'
 # THEME = '/mnt/c/Users/dom_t/Desktop/Projects/pelican/blockdoxcom/themes/pelican-bootstrap3'
 #DISPLAY_PAGES_ON_MENU = True
 # Bootstrap theme settings
