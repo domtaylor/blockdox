@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'BlockDox'
 SITENAME = 'BlockDox'
-SITEURL = ''
+SITEURL = 'https://blockdoxcom-staging-2.netlify.app'
 
 PATH = 'content'
 

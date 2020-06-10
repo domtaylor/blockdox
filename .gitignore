@@ -11,3 +11,6 @@ lib
 blockdoxcom.git
 .DS_Store
 .vscode
+
+# Local Netlify folder
+.netlify
